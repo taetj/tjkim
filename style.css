@@ -1,0 +1,474 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* border: 1px solid yellow;  */
+.wrap{
+    width: 1450px;  /* 결국 컨테이너를 건드려서 노반응형으로 만들 수 있다는점 */
+}
+.top{
+    border-bottom: 1px solid gray;
+}
+.logo{
+    background-color: #D9D9D9;
+    display: flex;
+    padding: 0 100px;
+    justify-content: space-between;
+    color: #646464;
+    font-size: 12px;
+    align-items: center;
+    
+}
+.cumu{
+    
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    margin-bottom: -1px;
+    background: white;
+    padding: 10px;
+}
+.login{
+    display: flex;
+    margin-left: auto;
+    padding: 
+    
+}
+
+}
+.login > li{
+    font-weight: 900;
+    padding: 0 10px;
+}
+.login i {
+    padding: 0 5px;
+}
+}
+.wellcom{
+    padding-left: 30px;
+}
+.wrapp{
+    /* background: red; */
+    width:88%;
+    height: 100%;
+    margin-left: 90px;
+    margin-top: 20px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search{
+    width: 400px;
+   position: relative;
+   
+}
+.search input{
+    width: 100%;
+    border: 1px solid blue;
+    border-radius: 2px;
+    padding: 12px 14px;
+    font-size: 15px;
+}
+
+
+.search i{
+    position : absolute;  //서치 이미지 자식에게 앱솔루트로 조정필요.
+    top: 1px;
+    right: 8px;
+    cursor: pointer;
+    padding: 12px 14px;
+}
+.logoo{
+    
+}
+.logoo a{
+    padding: 10px;
+    
+    color: #646464;
+}
+.contee{
+    
+    background: blue;
+    font-size: 14px;
+    margin-top: 15px;
+    font-weight: 600;
+    width:100%;  // 직접 이룬 calc
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.nav a{
+    color: white;
+    padding: 15px 21px;
+    
+}
+.nav a:hover{
+    background: red;
+    transition: all .5s;  // 천천히 뜨게 해주는 호버 속성
+}
+.nav i{
+    font-size:20px;
+    
+}
+.container{
+    position: relative;
+    width: 12
+
+}
+.container-main{
+    width: 890px;
+         /* %로 하면 반응형, px로 하면 노반응 */
+}
+.titleimg{
+    background: #D7D7D7;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+.titleimg > img{
+    margin-bottom: -4px;
+}
+.container .title{
+    margin-top: 25px;
+    font-weight: 900;
+    
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-size: 12px;
+    
+}
+.total .list{
+    display: flex;
+
+}
+.total > span {
+    border: 1px solid white;
+    background: gray;
+    border-radius: 5px;
+    padding: 7px 13px;
+}
+.total .list a{
+    padding: 7px 13px;
+    border: 1px solid white;
+    margin: 0 5px;
+    background: #A7CCD7;
+    border-radius: 5px;
+}
+.info-box{
+    border: 1px solid gray;
+    padding: 13px 0;
+    background: #D9F1F8;
+    white-space: nowrap;    
+    overflow: hidden;     
+    
+    position: relative;
+}
+.info-box .info{
+    display: flex;
+    font-size: 14px;
+    font-weight: 900;
+    padding-left: 10px;
+    white-space: nowrap;  /*줄바꿈 없애기*/
+    overflow: hidden;    /* 가로 넘치는거 막기*/
+}
+.info-box .info a{
+    border-right: 1px solid #c1c7c9;
+    padding: 0 6px 0 6px; 
+}
+.info .li-red{
+    color: red;
+}
+.info-box .button-info{
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    
+}
+
+.info-box .button-info button{
+    padding: 8px 8px;
+    border: 0 solid gray;
+    color: white;
+    border-radius: 10px;
+    background: skyblue;
+}
+.main-conte{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    
+}
+.main-oo{                             /*자식 클래스를 하나 더 줘야하는지 ?*/
+    border: 1px solid gray;
+    width: 100%;
+    margin: 20px 0;
+    height: 200px;
+    line-height: 32px;
+}
+
+.main-img img{
+    max-width: 100%;
+}
+.main-info{
+    font-weight: 900;    
+}
+.main-icon{            /* //글자 간격 실력 최소화 필요 */
+    background: #f6f6f6;
+       position: relative;
+       font-size: 11px;
+}
+.main-icon span{      /* 앱솔루트 이해 완료 */
+position: absolute;
+right: 0;
+color: gray;
+}
+.forme{
+    border: 1px solid gray;
+    float: left;     /* 보더 줄이기 활용 가능 */
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+.forme select, input , button{
+    font-size: 15px;
+    border: none;
+    background: white;
+}
+.forme input {
+    border-left: 1px solid gray;
+    padding-left: 10px;
+}
+.cilck{
+       clear: both;    /* float 와 짝꿍 속성 (취소개념) */
+       
+}
+.cilck ul{
+    display: flex;   /*  플렉스 먹일시 text-alian 안먹음 */
+    justify-content: center;
+    
+    
+}
+.cilck ul a{
+    border: 1px solid gray;
+    padding: 3px 8px;
+    border-radius: 4px;   
+    margin: 0 4px;
+    background: #f6f6f6;
+    margin-top: 30px;
+}
+.cilck .page-next{
+    background: red;
+    color: white;
+}
+.main-wrap{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 340px;
+    height: 93%;
+    
+    
+}
+.main-login{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    height: 230px;
+    background: #f7f9fa;;
+}
+.main-login .login-ckd{
+    margin: 15px;
+    padding: 5px 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 280px;
+}
+.login-ckd .login-id{
+   
+    border-bottom: 1px solid grey;
+}
+.login-id , .login-pass{
+    padding: 5px;
+    width: 100%;
+}
+.login-button{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 15px;
+    padding: 24px;
+    background: navy;
+    color: white;
+}
+.check-box{
+    margin: 10px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center
+}
+.check-box span{
+    font-size: 13px;
+}
+.ghldnjsrkdlq{
+    margin-left: auto;
+    margin-bottom: 3px;
+}
+.ghldnjsrkdlq .rkdlq{
+    font-weight: 900;
+    
+}
+.naver-kkao{
+    border-top: 1px solid #e8e8e8;
+   
+}
+.naverkk-box{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+   
+}
+.naverkk-box li{
+    padding: 10px 70px;
+    margin: 0 5px;
+    border-radius: 5px;
+    color: white;
+}
+.naver{
+    background: green;
+}
+.kkao{
+    background: yellow;
+}
+.main--info{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top: 25px;
+    font-size: 13px;
+    
+}
+.main--info .anrdj{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    background: #f6f6f6;
+}
+.rhdwl{
+    font-weight: 900;
+}
+.qhrl{
+    color:rgba(0, 0, 0, 0.3);
+}
+.main--info > ul > li{
+    margin: 10px;
+}
+.main-imgs{
+    margin-top: 25px;
+}
+.main-imgs > img{
+    width: 100%;
+}
+.main--info .open{
+    color:rgba(0, 0, 0, 0.5);
+    margin: 0 3px;
+}
+.rank{
+    display: inline-block; /* 인라인 블럭으로 너비 조정 가능 */
+    color: white;
+    border: 1px solid gray;
+    border-radius: 3px;
+    background: #b3b8c0;
+    width: 20px;
+    text-align: center;
+}
+dl .color-1{
+    background: skyblue;
+}
+dl{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    
+}
+dl > dt , dd{
+    padding: 5px 0;
+    margin-left: 5px;
+}
+dl > dt > span{
+    display: inline-block;    /* 인라인블럭 공부필요 그리드를 이용한 2줄 */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid groove;
+    vertical-align: middle;
+}
+dl > dd > strong{
+    border-radius: 30px;
+    border: 1px solid groove;
+    padding: 0 5px;
+    color: white;
+}
+dl .color-2{
+    background: red;
+}
+.footerwap{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);;
+    font-size: 13px;
+}
+.icon-info i{
+    display: inline-block;
+    background: blueviolet;
+    color: white;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 22px;
+    
+}
+.ul-info{
+    display: flex;
+}
+.ul-info li{
+    display: flex;
+    font-weight: 900;
+    padding: 0 10px;
+}
+.footer-end{
+    display: flex;
+    flex-direction: column;
+    
+}
+.footer-end img{
+    width: 123px;
+    height: 60px;
+    margin: auto;
+    margin-top: 15px;
+}
+.footer-end span{
+    text-align: center;
+    margin-top: 15px;
+}
+.redfont{
+    color: red;
+}
+.button-top{
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.button-top i:hover{
+    background: blanchedalmond;
+}
